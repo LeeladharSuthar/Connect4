@@ -1,0 +1,4 @@
+const matrix = Array(7).fill(null).map(() => Array(7).fill(null));
+
+let matrix = [Array(7).fill(null), Array(7).fill(null), Array(7).fill(null),Array(7).fill(null),Array(7).fill(null),Array(7).fill(null),Array(7).fill(null)]
+

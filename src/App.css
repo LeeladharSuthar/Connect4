@@ -1,0 +1,17 @@
+button{
+    width: 52px;
+    height: 52px;
+    border: 2px solid rgb(109, 27, 27);
+    border-radius: 50%;
+    margin: 3px;
+}
+.board{
+    margin: auto;
+    border: 2px solid black;
+    background-color: brown;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
