@@ -1,8 +1,8 @@
-export default function Circle({update, states, row, col}) {
+export default function Circle({update, states, col, row}) {
     function handleClick(){
-        update(row, col);
+        update(col);
     }
     return <>
-        <button onClick={handleClick}></button>
+        <button onClick={handleClick} className={states[row][col]==null?"white":states[row][col]=="X"?"red":"blue"}></button>
     </>
-}
+} 
