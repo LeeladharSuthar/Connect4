@@ -3,14 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
+
+body, body #root{
     width: 100vw;
+    height: 100vh;
 }
+
 #root{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://myairbnbproject.s3.ap-south-1.amazonaws.com/Connect4Bgc.jpg);
+    background-position: center;
 }
+
+.board{
+    width: 80vh;
+    height: 80vh;
+    background-image: url(https://myairbnbproject.s3.ap-south-1.amazonaws.com/Connect4Board.jpg);
+    border: 2px solid rgba(112, 27, 27, 0.651);
+    border-radius: 0.5rem;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.board div{
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    border: transparent;
+}
+
+.red, .white, .blue{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.reset{
+    padding: 7px 14px;
+    border-radius: 0.5rem;
+    background-color: brown;
+    color: wheat;
+    font-weight: 600;
+}
+
+.reset:hover{
+    color: brown;
+    background-color: wheat;
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+}
+
+
 
 .red{
     background-color: red;
@@ -19,5 +68,5 @@ body{
     background-color: blue;
 }
 .white{
-    background-color: white;
+    background-color: rgba(180, 146, 101, 0.575);
 }

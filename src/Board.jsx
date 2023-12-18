@@ -67,6 +67,6 @@ export default function Board() {
             <Row update={update} states={states} row={5} />
             <Row update={update} states={states} row={6} />
         </div>
-        <button onClick={reset}>Reset</button>
+        <button className="reset" onClick={reset}>Reset</button>
     </>
 }

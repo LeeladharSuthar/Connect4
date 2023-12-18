@@ -9,4 +9,4 @@ export default function Row({update, states, row}) {
         <Circle update={update} states={states} row={row} col={5}/>
         <Circle update={update} states={states} row={row} col={6}/>
     </div>
-} 
+}  
